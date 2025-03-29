@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Secure Tool - by Ali Ben Hamza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Tool</h1>
+
+        <div class="input-group">
+            <label for="password">Enter Text:</label>
+            <input
+                type="text"
+                id="password"
+                placeholder="Enter text to encode/decode"
+                autocomplete="off"
+            />
+        </div>
+
+        <div class="button-group">
+            <button onclick="encodePassword(event)">
+                <span class="button-text">Encode</span>
+                <div class="loader"></div>
+            </button>
+            <button onclick="decodePassword(event)">
+                <span class="button-text">Decode</span>
+                <div class="loader"></div>
+            </button>
+        </div>
+
+        <div class="input-group">
+            <label>Result:</label>
+            <div id="result"></div>
+        </div>
+
+        <div class="credits">
+            Crafted with ❤️ by
+            <span>
+                <a href="https://www.facebook.com/Alibenhamza2" target="_blank">Ali Ben Hamza</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
